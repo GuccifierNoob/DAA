@@ -1,3 +1,4 @@
+/*Write a c program to perform the linear search by passing different number of test cases */
 #include <stdio.h>
 #include <stdlib.h>
 int main()
