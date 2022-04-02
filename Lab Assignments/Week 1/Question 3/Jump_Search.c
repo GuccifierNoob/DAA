@@ -7,28 +7,28 @@ int main()
   int n,e,point=0,prev=0;
   printf("Enter the size of an array: ");
   scanf("%d",&n);
-  int step=sqrt(n);
   int arr[n];
+  int step=(int)(sqrt(n));
+  printf("Enter the Elements in an array: ");
   for(int i=0;i<n;i++)
-    scanf("%d",arr[i]);
+    scanf("%d",&arr[i]);
   printf("enter the element to be searched :");
   scanf("%d",&e);
-  if(e<a[0]){
+  if(e<arr[0]){
     printf("Element is not found");
-    exit(0);
   }
-  while(a[point]<e){
+  while(arr[point]<e){
     prev=point;
     if(point==n-1){
       printf("Element is not found ");
-      exit(0);
+     
     }
     point=point+step;
     if(point>n-1)
        point=n-1;
-    for(i=prev+1;i<=point;i++)
+    for(int i=prev+1;i<=point;i++)
     {
-      if(a[i]==e)
+      if(arr[i]==e)
       {
         printf("Element found at the index %d ",i);
      exit(0);
@@ -37,3 +37,4 @@ int main()
     printf("Element Not found\n");
     return 0;
   }
+}
