@@ -48,7 +48,7 @@ int main()
         scanf("%d",&n);
         int arr[n];
         for (int i=0;i<n;i++)
-           scanf("%d",arr[i]);
+           scanf("%d",&arr[i]);
         merge_sort(arr,0,n-1);
         int flag=0;
         for (int i=0;i<n-1;i++)
