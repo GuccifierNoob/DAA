@@ -41,7 +41,7 @@ void merge_sort(int arr[],int l,int h)
 int main()
 {
     int t;
-    cin>>t;
+    scanf("%d",&t);
     while (t--)
     {
         int n;
