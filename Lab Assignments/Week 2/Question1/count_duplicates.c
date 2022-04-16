@@ -1,4 +1,4 @@
-//write a c program to count the number of duplicate elements if present in an array
+//write a c program to count the number of duplicate(frequency) elements if present in an array
 #include <stdio.h>
     int count=0;
 int binarySearch(int arr[], int l, int r, int x)
@@ -23,10 +23,15 @@ int binarySearch(int arr[], int l, int r, int x)
 
 int main(void)
 {
-	int arr[] = {1,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,5,5,5,25,75,75,75,97,97,97 };
-	int n = sizeof(arr) / sizeof(arr[0]);
-	int x =2;
-	int result = binarySearch(arr, 0, n - 1, x);
+    int n,x,result;
+    printf("Enter the limit of an array: ");
+    scanf("%d",&n);
+	int arr[n];
+	for(int i=0;i<n;i++)
+	scanf("%d",&arr[i]);
+	printf("Enter the element to be searched: ");
+	scanf("%d",&x);
+	result = binarySearch(arr, 0, n - 1, x);
    printf("%d",result);
 	return 0;
 }
