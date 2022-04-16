@@ -31,7 +31,7 @@ void Selection_sort(int arr[],int n)
         }   
     } 
     printf("Comparisions: %d",comp);
-    printf("Swaps: %d",swaps);
+    printf("Swaps: %d\n",swaps);
 
     for (int i=0;i<n;i++)
            printf("%d",arr[i]);
